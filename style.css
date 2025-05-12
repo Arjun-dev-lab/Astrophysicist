@@ -1,0 +1,346 @@
+/* Base Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+    background: rgba(0, 0, 0, 0.726);
+}
+
+#spaceGif {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.tagline {
+    font-size: 1rem;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+/* Parallax Sections */
+.parallax-container {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.parallax-section {
+    position: relative;
+    min-height: 100vh;
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+}
+
+.hero {
+    text-align: left;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Profile Photo */
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 2rem;
+}
+
+/* Content Box */
+.content-box {
+    background: rgb(255, 255, 255);
+    padding: 3rem;
+    border-radius: 10px;
+    margin: 0 auto;
+    backdrop-filter: blur(5px);
+}
+
+/* Social Links */
+.social-links a {
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ff5c5c;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: white;
+}
+
+.social-icon:hover {
+    color: #ff5c5c;
+}
+
+/* Typewriter Effect */
+.type-writer {
+    height: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* About Section */
+#about {
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #ffc107;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    color: #ddd;
+    text-align: justify;
+}
+
+#about a {
+    color: #ffc107;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#about a:hover {
+    text-decoration: underline;
+    color: #ff5c5c;
+}
+
+/* Image Button Thread */
+.image-button-thread {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-right: 1.5rem;
+    z-index: 2;
+}
+
+.circle-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transform: translateX(0);
+    transition: transform 0.5s ease-out;
+}
+
+.circle-button.pulled-0 { transform: translateX(-40px); }
+.circle-button.pulled-1 { transform: translateX(-30px); }
+.circle-button.pulled-2 { transform: translateX(-20px); }
+.circle-button.pulled-3 { transform: translateX(-10px); }
+
+/* Icon Button Thread */
+.icon-button-thread {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    z-index: 3;
+}
+
+.icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.icon-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+}
+
+.icon-wrapper:hover .icon-button {
+    transform: translateX(-15px);
+    background: #fff;
+    color: #000;
+}
+
+.icon-caption {
+    margin-top: 0.3rem;
+    font-size: 13px;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    transform: translateX(0);
+}
+
+.icon-wrapper:hover .icon-caption,
+.icon-wrapper:focus-within .icon-caption,
+.icon-wrapper:active .icon-caption {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-20px);
+}
+
+.icon-button.selected {
+    background: #fff;
+    color: #000;
+    transform: translateX(-20px);
+}
+
+/* Content Section */
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+}
+
+/* Navigation */
+.div-nav {
+    margin-bottom: 1rem;
+}
+
+/* Shooting Star Canvas */
+#shootingStarCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .parallax-section {
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .content-box {
+        padding: 2rem;
+    }
+
+    .icon-button {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .container {
+        padding-top: 100px;
+    }
+
+    .icon-wrapper:hover .icon-button,
+    .icon-wrapper:focus-within .icon-button,
+    .icon-wrapper:active .icon-button {
+        transform: translateY(15px);
+        background: #fff;
+        color: #000;
+    }
+
+    .icon-wrapper:hover .icon-caption,
+    .icon-wrapper:focus-within .icon-caption,
+    .icon-wrapper:active .icon-caption {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(10px);
+    }
+
+    .icon-button.selected {
+        transform: translateY(20px);
+        background: #fff;
+        color: #000;
+    }
+}
+
+@media (max-width: 425px) {
+    .icon-button {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        margin: 1rex;
+    }
+
+    .container {
+        padding-top: 75px;
+    }
+
+    .icon-caption {
+        font-size: 10px;
+    }
+}
