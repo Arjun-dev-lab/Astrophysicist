@@ -14,7 +14,7 @@
     <!-- Font Awesome CDN -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <!--Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
     <canvas id="shootingStarCanvas"></canvas>
@@ -28,11 +28,11 @@
                 <div class="row">
                     <!-- Left Column: Image -->
                     <div class="col-md-4 text-center mb-4 mb-md-0 d-none d-md-block" data-aos="fade-in">
-                        <img src="photo.jpg" alt="Dr. [Your Name]" class="profile-photo img-fluid rounded-circle">
+                        <img src="images/profile.png" alt="Sethulakshmi" class="profile-photo img-fluid rounded-circle">
                     </div>
                     <!-- Right Column: Text -->
                     <div class="col-md-8 column-r">
-                        <h1 data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000">Dr. [Your Name]</h1>
+                        <h1 data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000">Sethulakshmi</h1>
                         <h2 data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000">Astrophysicist & Cosmologist</h2>
                         <div class="type-writer">
                             <p id="typewriter-text" class="tagline"></p>
@@ -55,7 +55,7 @@
                 </div>
             </div>
         </section>
-
+    
         <!-- Horizontal Navbar -->
         <nav class="icon-nav d-flex justify-content-center div-nav d-block d-md-none flex-wrap">
             <div class="icon-wrapper">
@@ -75,23 +75,18 @@
                 <div class="icon-caption">Talks</div>
             </div>
             <div class="icon-wrapper">
-                <button class="icon-button" data-target="workshops"><i class="fas fa-chalkboard-teacher"></i></button>
-                <div class="icon-caption">Workshops</div>
-            </div>
-            <div class="icon-wrapper">
-                <button class="icon-button" data-target="skills"><i class="fas fa-tools"></i></button>
-                <div class="icon-caption">Skills</div>
-            </div>
-            <div class="icon-wrapper">
-                <button class="icon-button" data-target="contact"><i class="fas fa-envelope"></i></button>
+                <a href="contact.html" class="icon-button">
+                    <i class="fas fa-envelope"></i>
+                </a>
                 <div class="icon-caption">Contact</div>
             </div>
         </nav>
 
         <!-- About Section -->
-        <section id="about" class="parallax-section about py-5 row">
+        <section id="about" class="content-about about row">
+            <div>
             <!-- Icon Buttons (Desktop) -->
-            <div class="image-button-thread d-none d-md-block col-2">
+            <div class="image-button-thread d-none d-md-block col-md-2">
                 <div class="icon-button-thread">
                     <div class="icon-wrapper">
                         <button class="icon-button" data-target="about"><i class="fas fa-user"></i></button>
@@ -110,58 +105,686 @@
                         <div class="icon-caption">Talks</div>
                     </div>
                     <div class="icon-wrapper">
-                        <button class="icon-button" data-target="workshops"><i class="fas fa-chalkboard-teacher"></i></button>
-                        <div class="icon-caption">Workshops</div>
-                    </div>
-                    <div class="icon-wrapper">
-                        <button class="icon-button" data-target="skills"><i class="fas fa-tools"></i></button>
-                        <div class="icon-caption">Skills</div>
-                    </div>
-                    <div class="icon-wrapper">
-                        <button class="icon-button" data-target="contact"><i class="fas fa-envelope"></i></button>
+                        <a href="contact.html" class="icon-button">
+                            <i class="fas fa-envelope"></i>
+                        </a>
                         <div class="icon-caption">Contact</div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+            <div>
+            <!-- Content Sections -->
+                <div id="content-about" class="content-section col-12 col-md-11 active">
+                    <div class="container">
+                        <!-- Main Heading with Decoration -->
+                        <div class="text-center mb-5">
+                            <h2 class="display-4 fw-bold text-gradient">About Me</h2>
+                            <div class="divider mx-auto" style="width: 80px; height: 3px; background: linear-gradient(90deg, #ff6b6b, #4ecdc4);"></div>
+                        </div>
+
+                        <!-- Profile Section with Floating Animation -->
+                        <div class="row align-items-center mb-5 g-4 hover-float">
+                            <div class="col-lg-4 text-center">
+                                <div class="profile-frame mx-auto">
+                                    <img src="images/profile.png" 
+                                        alt=" Sethulakshmi" 
+                                        class="img-fluid rounded-circle shadow-lg" 
+                                        style="aspect-ratio: 1 / 1; object-fit: cover; width: 250px; border: 5px solid rgba(255,255,255,0.2);">
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="ps-lg-4">
+                                    <h3 class="fw-bold mb-3">Sethulakshmi</h3>
+                                    <h4 class=" mb-4">Astrophysicist & Cosmology Researcher</h4>
+                                    
+                                    <div class="bio-text">
+                                        <p>Greetings! I'm Sethulakshmi, an astrophysicist specializing in high-energy phenomena and cosmological simulations. With over 8 years of research experience across three continents, my work bridges the gap between theoretical predictions and observational data.</p>
+                                        
+                                        <p>My current research at the International Center for Theoretical Physics focuses on black hole accretion disks and their role in galaxy evolution. Using multi-wavelength data from cutting-edge telescopes, I develop computational models to understand these extreme environments.</p>
+                                        
+                                        <p>Beyond research, I'm passionate about making astrophysics accessible. I've created interactive data visualization tools and regularly contribute to public science communication through podcasts, planetarium shows, and my YouTube channel "Cosmic Perspectives."</p>
+                                    </div>
+                                    
+                                    <div class="d-flex flex-wrap gap-3 mt-4">
+                                        <a href="https://drive.google.com/file/d/1pH0pgA2HSMntKpWcrSdUkSxDCLCj-HK3/view?usp=sharing" class="btn btn-primary btn-lg px-4 py-2">
+                                            <i class="fas fa-eye me-2"></i> View CV
+                                        </a>
+                                        <a href="#Contact" class="btn btn-outline-light btn-lg px-4 py-2">
+                                            <i class="fas fa-envelope me-2"></i> Contact Me
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Research Highlights -->
+                        <div class="section-block mb-5">
+                            <h3 class="section-title mb-4">
+                                <span class="title-decorator">◆</span> Research Focus Areas
+                                <span class="title-decorator">◆</span>
+                            </h3>
+                            
+                            <div class="row g-4">
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="highlight-card h-100">
+                                        <div class="card-icon">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <h5>Stellar Evolution</h5>
+                                        <p>Studying late-stage stellar evolution and supernova progenitors using spectroscopic surveys and hydrodynamic simulations.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="highlight-card h-100">
+                                        <div class="card-icon">
+                                            <i class="fas fa-black-hole"></i>
+                                        </div>
+                                        <h5>Black Hole Physics</h5>
+                                        <p>Investigating accretion disk dynamics and relativistic jets in active galactic nuclei across multiple wavelengths.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="highlight-card h-100">
+                                        <div class="card-icon">
+                                            <i class="fas fa-atom"></i>
+                                        </div>
+                                        <h5>Cosmology</h5>
+                                        <p>Exploring dark matter distribution and large-scale structure formation through N-body simulations and weak lensing analysis.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="highlight-card h-100">
+                                        <div class="card-icon">
+                                            <i class="fas fa-laptop-code"></i>
+                                        </div>
+                                        <h5>Computational Astrophysics</h5>
+                                        <p>Developing novel numerical methods and machine learning applications for astronomical data analysis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Career Timeline -->
+                        <div class="section-block">
+                            <h3 class="section-title mb-4">
+                                <span class="title-decorator">◆</span> Professional Journey
+                                <span class="title-decorator">◆</span>
+                            </h3>
+                            
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-date">2021-Present</div>
+                                    <div class="timeline-content">
+                                        <h5>Postdoctoral Researcher</h5>
+                                        <h6>International Center for Theoretical Physics</h6>
+                                        <p>Leading a research group studying AGN feedback in galaxy clusters. Developed new analysis pipelines for X-ray data.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <div class="timeline-date">2018-2021</div>
+                                    <div class="timeline-content">
+                                        <h5>PhD in Astrophysics</h5>
+                                        <h6>Harvard University</h6>
+                                        <p>Thesis: "Multi-Messenger Signatures of Compact Object Mergers" advised by Prof. Lisa Randall.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <div class="timeline-date">2016-2018</div>
+                                    <div class="timeline-content">
+                                        <h5>Research Fellow</h5>
+                                        <h6>European Southern Observatory</h6>
+                                        <p>Instrument scientist for the MUSE spectrograph, contributing to 12 published papers on galaxy evolution.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="content-research" class="content-section">
+                    <div class="container">
+                        <!-- Decorative Header -->
+                        <div class="text-center mb-5">
+                            <h2 class="display-4 fw-bold text-gradient">Research Projects</h2>
+                            <div class="divider mx-auto" style="width: 80px; height: 3px; background: linear-gradient(90deg, #ff6b6b, #4ecdc4);"></div>
+                            <p class="lead mt-3">Exploring the frontiers of astrophysics through cutting-edge research</p>
+                        </div>
+
+                        <!-- Main Research Focus -->
+                        <div class="row align-items-center mb-5 g-4">
+                            <div class="col-lg-6">
+                                <div class="pe-lg-4">
+                                    <h3 class="fw-bold mb-3">Current Primary Research</h3>
+                                    <div class="research-text">
+                                        <p>My primary research focuses on <strong>high-energy astrophysical phenomena</strong>, particularly the interaction between supermassive black holes and their host galaxies. Using multi-wavelength observations combined with hydrodynamic simulations, I study how active galactic nuclei influence star formation rates and gas dynamics in galaxy clusters.</p>
+                                        
+                                        <p>Recent work has revealed unexpected correlations between AGN feedback mechanisms and the chemical enrichment of intracluster media. This challenges existing models of galaxy evolution and opens new avenues for understanding cosmic structure formation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="research-visual p-4 rounded-3" style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1);">
+                                    <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=911&q=80" 
+                                        alt="Galaxy Cluster Research" 
+                                        class="img-fluid rounded-3 shadow-lg mb-3"
+                                        style="width: 100%; height: auto;">
+                                    <p class="text-center mb-0"><small>Fig 1. Multi-wavelength observation of galaxy cluster MACS J0717.5+3745</small></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Research Projects Grid -->
+                        <div class="section-block mb-5">
+                            <h3 class="section-title mb-4">
+                                <span class="title-decorator">◆</span> Ongoing Projects
+                                <span class="title-decorator">◆</span>
+                            </h3>
+                            
+                            <div class="row g-4">
+                                <!-- Project 1 -->
+                                <div class="col-md-6">
+                                    <div class="research-card h-100">
+                                        <div class="card-header">
+                                            <i class="fas fa-project-diagram me-2"></i>
+                                            <h4>QUASAR Survey</h4>
+                                            <span class="badge bg-primary">2021-Present</span>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>Leading an international team conducting the largest spectroscopic survey of quasars at z > 2.5. Our preliminary results suggest a 15% higher density of broad absorption line quasars than predicted by current models.</p>
+                                            <div class="tech-tags">
+                                                <span class="badge bg-dark">HST</span>
+                                                <span class="badge bg-dark">XMM-Newton</span>
+                                                <span class="badge bg-dark">Python</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="#" class="btn btn-sm btn-outline-light">View Publications</a>
+                                            <a href="#" class="btn btn-sm btn-primary ms-2">Project Website</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Project 2 -->
+                                <div class="col-md-6">
+                                    <div class="research-card h-100">
+                                        <div class="card-header">
+                                            <i class="fas fa-chart-network me-2"></i>
+                                            <h4>Cosmic Web Mapping</h4>
+                                            <span class="badge bg-success">2019-Present</span>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>Developing novel algorithms to map the cosmic web using weak gravitational lensing and galaxy redshift surveys. Our 3D reconstructions reveal previously unseen filamentary structures connecting galaxy clusters.</p>
+                                            <div class="tech-tags">
+                                                <span class="badge bg-dark">LSST</span>
+                                                <span class="badge bg-dark">Machine Learning</span>
+                                                <span class="badge bg-dark">CUDA</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="#" class="btn btn-sm btn-outline-light">View Dataset</a>
+                                            <a href="#" class="btn btn-sm btn-primary ms-2">Interactive Viz</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Project 3 -->
+                                <div class="col-md-6">
+                                    <div class="research-card h-100">
+                                        <div class="card-header">
+                                            <i class="fas fa-stars me-2"></i>
+                                            <h4>Supernova Legacy</h4>
+                                            <span class="badge bg-warning text-dark">2017-Present</span>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>Cataloging and analyzing Type Ia supernovae to refine cosmological distance measurements. Our latest calibration reduces systematic errors by 22%, with implications for dark energy studies.</p>
+                                            <div class="tech-tags">
+                                                <span class="badge bg-dark">ZTF</span>
+                                                <span class="badge bg-dark">ALMA</span>
+                                                <span class="badge bg-dark">TensorFlow</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="#" class="btn btn-sm btn-outline-light">View Catalog</a>
+                                            <a href="#" class="btn btn-sm btn-primary ms-2">Live Alerts</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Project 4 -->
+                                <div class="col-md-6">
+                                    <div class="research-card h-100">
+                                        <div class="card-header">
+                                            <i class="fas fa-atom me-2"></i>
+                                            <h4>Dark Matter Simulations</h4>
+                                            <span class="badge bg-info">2020-Present</span>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>Running the largest N-body simulations of fuzzy dark matter scenarios. Our results constrain alternative dark matter models and provide testable predictions for upcoming JWST observations.</p>
+                                            <div class="tech-tags">
+                                                <span class="badge bg-dark">AREZO</span>
+                                                <span class="badge bg-dark">HPC</span>
+                                                <span class="badge bg-dark">MPI</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="#" class="btn btn-sm btn-outline-light">Simulation Data</a>
+                                            <a href="#" class="btn btn-sm btn-primary ms-2">Visualization</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Collaborations Section -->
+                        <div class="section-block">
+                            <h3 class="section-title mb-4">
+                                <span class="title-decorator">◆</span> Research Collaborations
+                                <span class="title-decorator">◆</span>
+                            </h3>
+                            
+                            <div class="row g-4">
+                                <div class="col-md-3">
+                                    <div class="collab-card text-center p-4">
+                                        <img src="https://th.bing.com/th/id/OSK.74ec914d3e24aaabcf607380bccdb18f?w=102&h=102&c=7&o=6&pid=SANGAM" alt="ISRO Logo" class="img-fluid mb-3" style="height: 60px;">
+                                        <h5>Indian Space Research Organisation</h5>
+                                        <p>Joint research on satellite-based remote sensing and space-based astronomy missions</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="collab-card text-center p-4">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png" alt="NASA Logo" class="img-fluid mb-3" style="height: 60px;">
+                                        <h5>NASA Astrophysics</h5>
+                                        <p>Member of the Chandra X-ray Observatory science working group since 2018</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-3">
+                                    <div class="collab-card text-center p-4">
+                                        <img src="https://www.eso.org/public/archives/logos/medium/eso-logo-black.jpg" alt="ESO Logo" class="img-fluid mb-3" style="height: 60px;">
+                                        <h5>European Southern Observatory</h5>
+                                        <p>Principal investigator for ESO program 2104.A-1234 (2021-2024)</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-3">
+                                    <div class="collab-card text-center p-4">
+                                        <img src="https://theory.cern/sites/default/themes/cernoverride/logo.svg" alt="CERN Logo" class="img-fluid mb-3" style="height: 60px;">
+                                        <h5>CERN Theory Group</h5>
+                                        <p>Collaborating on particle physics signatures in astrophysical contexts</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="content-publications" class="content-section">
+                    <div class="container">
+                        <!-- Decorative Header -->
+                        <div class="text-center mb-5">
+                            <h2 class="display-4 fw-bold text-gradient">Publications</h2>
+                            <div class="divider mx-auto" style="width: 80px; height: 3px; background: linear-gradient(90deg, #ff6b6b, #4ecdc4);"></div>
+                            <p class="lead mt-3">Peer-reviewed contributions advancing our understanding of the universe</p>
+                        </div>
+
+                        <!-- Featured Publications -->
+                        <div class="row g-4 mb-5">
+                            <!-- Publication 1 -->
+                            <div class="col-md-6">
+                                <div class="research-card h-100">
+                                    <div class="card-header">
+                                        <i class="fas fa-book me-2"></i>
+                                        <h4>AGN Feedback in Galaxy Clusters</h4>
+                                        <span class="badge bg-primary">Astrophysical Journal, 2024</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Investigates the role of active galactic nuclei in regulating star formation and heating intracluster gas using data from Chandra and XMM-Newton.</p>
+                                        <div class="tech-tags">
+                                            <span class="badge bg-dark">AGN</span>
+                                            <span class="badge bg-dark">X-ray Astronomy</span>
+                                            <span class="badge bg-dark">Chandra</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#" class="btn btn-sm btn-outline-light">Read Full Paper</a>
+                                        <a href="#" class="btn btn-sm btn-primary ms-2">DOI</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Publication 2 -->
+                            <div class="col-md-6">
+                                <div class="research-card h-100">
+                                    <div class="card-header">
+                                        <i class="fas fa-rocket me-2"></i>
+                                        <h4>Mapping the Cosmic Web</h4>
+                                        <span class="badge bg-success">MNRAS, 2023</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Presents new methods for reconstructing the cosmic web using weak gravitational lensing data and large-scale simulations.</p>
+                                        <div class="tech-tags">
+                                            <span class="badge bg-dark">Gravitational Lensing</span>
+                                            <span class="badge bg-dark">Python</span>
+                                            <span class="badge bg-dark">Simulation</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#" class="btn btn-sm btn-outline-light">Read Full Paper</a>
+                                        <a href="#" class="btn btn-sm btn-primary ms-2">DOI</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Publication 3 -->
+                            <div class="col-md-6">
+                                <div class="research-card h-100">
+                                    <div class="card-header">
+                                        <i class="fas fa-superpowers me-2"></i>
+                                        <h4>Dark Matter Models in Tension</h4>
+                                        <span class="badge bg-warning text-dark">Nature Astronomy, 2022</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Evaluates the observational constraints on fuzzy and self-interacting dark matter models using latest lensing and CMB data.</p>
+                                        <div class="tech-tags">
+                                            <span class="badge bg-dark">Dark Matter</span>
+                                            <span class="badge bg-dark">CMB</span>
+                                            <span class="badge bg-dark">Data Analysis</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#" class="btn btn-sm btn-outline-light">Read Full Paper</a>
+                                        <a href="#" class="btn btn-sm btn-primary ms-2">DOI</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Publication 4 -->
+                            <div class="col-md-6">
+                                <div class="research-card h-100">
+                                    <div class="card-header">
+                                        <i class="fas fa-star me-2"></i>
+                                        <h4>Type Ia Supernova Calibration</h4>
+                                        <span class="badge bg-info">Astronomy & Astrophysics, 2021</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Introduces improved calibration techniques for Type Ia supernovae, reducing systematic error and refining measurements of cosmic acceleration.</p>
+                                        <div class="tech-tags">
+                                            <span class="badge bg-dark">Supernovae</span>
+                                            <span class="badge bg-dark">Cosmology</span>
+                                            <span class="badge bg-dark">Statistical Modeling</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#" class="btn btn-sm btn-outline-light">Read Full Paper</a>
+                                        <a href="#" class="btn btn-sm btn-primary ms-2">DOI</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="content-talks" class="content-section">
+                    <div class="container">
+                        <!-- Decorative Header -->
+                        <div class="text-center mb-5">
+                            <h2 class="display-4 fw-bold text-gradient">Invited Talks & Presentations</h2>
+                            <div class="divider mx-auto" style="width: 80px; height: 3px; background: linear-gradient(90deg, #ff6b6b, #4ecdc4);"></div>
+                            <p class="lead mt-3">Engaging global audiences with insights into astrophysical discoveries and methods</p>
+                        </div>
+
+                        <!-- Talks Grid -->
+                        <div class="row g-4 mb-5">
+                            <!-- Talk 1 -->
+                            <div class="col-md-6">
+                                <div class="research-card h-100">
+                                    <div class="card-header">
+                                        <i class="fas fa-microphone-alt me-2"></i>
+                                        <h4>Keynote: AGN Feedback and Galaxy Evolution</h4>
+                                        <span class="badge bg-primary">IAU Symposium, Tokyo – 2024</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Discussed new evidence of AGN-driven outflows regulating star formation in massive galaxies, with implications for galaxy lifecycle models.</p>
+                                        <div class="tech-tags">
+                                            <span class="badge bg-dark">Galaxy Evolution</span>
+                                            <span class="badge bg-dark">IAU</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#" class="btn btn-sm btn-outline-light">Watch Recording</a>
+                                        <a href="#" class="btn btn-sm btn-primary ms-2">Slides</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Talk 2 -->
+                            <div class="col-md-6">
+                                <div class="research-card h-100">
+                                    <div class="card-header">
+                                        <i class="fas fa-chalkboard-teacher me-2"></i>
+                                        <h4>Cosmic Web Mapping with Machine Learning</h4>
+                                        <span class="badge bg-success">Harvard CfA Colloquium – 2023</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Presented a novel pipeline using convolutional neural networks to identify filamentary structures in 3D galaxy surveys.</p>
+                                        <div class="tech-tags">
+                                            <span class="badge bg-dark">Machine Learning</span>
+                                            <span class="badge bg-dark">Cosmic Web</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#" class="btn btn-sm btn-outline-light">View Abstract</a>
+                                        <a href="#" class="btn btn-sm btn-primary ms-2">Slides</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Talk 3 -->
+                            <div class="col-md-6">
+                                <div class="research-card h-100">
+                                    <div class="card-header">
+                                        <i class="fas fa-user-astronaut me-2"></i>
+                                        <h4>Panel: Future of Dark Matter Research</h4>
+                                        <span class="badge bg-warning text-dark">CERN Workshop – 2022</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Joined international experts in a panel discussion on experimental and theoretical paths toward detecting non-WIMP dark matter candidates.</p>
+                                        <div class="tech-tags">
+                                            <span class="badge bg-dark">Dark Matter</span>
+                                            <span class="badge bg-dark">CERN</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#" class="btn btn-sm btn-outline-light">Read Summary</a>
+                                        <a href="#" class="btn btn-sm btn-primary ms-2">Video</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Talk 4 -->
+                            <div class="col-md-6">
+                                <div class="research-card h-100">
+                                    <div class="card-header">
+                                        <i class="fas fa-globe me-2"></i>
+                                        <h4>Public Lecture: The Expanding Universe</h4>
+                                        <span class="badge bg-info">Royal Society, London – 2021</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Gave a public talk explaining redshift, supernova cosmology, and the observational evidence behind the accelerating universe.</p>
+                                        <div class="tech-tags">
+                                            <span class="badge bg-dark">Public Outreach</span>
+                                            <span class="badge bg-dark">Cosmology</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#" class="btn btn-sm btn-outline-light">Watch Online</a>
+                                        <a href="#" class="btn btn-sm btn-primary ms-2">Transcript</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Talk Archive -->
+                        <div class="text-center">
+                            <p class="lead">For a full archive of talks and seminar appearances, please visit the <a href="#" class="text-decoration-underline">Talks Repository</a>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="content-contact" class="content-section">
+                    <div class="container">
+                        <!-- Decorative Header -->
+                        <div class="text-center mb-5">
+                            <h2 class="display-4 fw-bold text-gradient">Get In Touch</h2>
+                            <div class="divider mx-auto" style="width: 80px; height: 3px; background: linear-gradient(90deg, #ff6b6b, #4ecdc4);"></div>
+                            <p class="lead mt-3">I'm always open to collaborations, research discussions, or just chatting about the cosmos</p>
+                        </div>
+
+                        <div class="row g-5">
+                            <!-- Contact Information -->
+                            <div class="col-lg-5">
+                                <div class="contact-info-card p-4 p-lg-5 rounded-4">
+                                    <h3 class="mb-4 fw-bold"><i class="fas fa-paper-plane me-2"></i> Contact Details</h3>
+                                    
+                                    <div class="contact-item d-flex mb-4">
+                                        <div class="contact-icon me-3">
+                                            <i class="fas fa-envelope fa-lg"></i>
+                                        </div>
+                                        <div>
+                                            <h5>Email</h5>
+                                            <a href="mailto:research@astroexample.com" class="text-white">research@astroexample.com</a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="contact-item d-flex mb-4">
+                                        <div class="contact-icon me-3">
+                                            <i class="fas fa-phone-alt fa-lg"></i>
+                                        </div>
+                                        <div>
+                                            <h5>Phone</h5>
+                                            <a href="tel:+11234567890" class="text-white">+1 (123) 456-7890</a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="contact-item d-flex mb-4">
+                                        <div class="contact-icon me-3">
+                                            <i class="fas fa-map-marker-alt fa-lg"></i>
+                                        </div>
+                                        <div>
+                                            <h5>Office</h5>
+                                            <p>Center for Astrophysics<br>
+                                            Harvard-Smithsonian Center<br>
+                                            60 Garden St, Cambridge, MA 02138</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="contact-item d-flex mb-4">
+                                        <div class="contact-icon me-3">
+                                            <i class="fas fa-calendar-alt fa-lg"></i>
+                                        </div>
+                                        <div>
+                                            <h5>Office Hours</h5>
+                                            <p>Monday-Thursday: 10am-4pm<br>
+                                            By appointment only</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="social-links mt-5">
+                                        <a href="#" class="social-icon-circle me-3">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="#" class="social-icon-circle me-3">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                        <a href="#" class="social-icon-circle me-3">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                        <a href="#" class="social-icon-circle me-3">
+                                            <i class="fab fa-researchgate"></i>
+                                        </a>
+                                        <a href="#" class="social-icon-circle">
+                                            <i class="fab fa-orcid"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Contact Form -->
+                            <div class="col-lg-7">
+                                <div class="contact-form-card p-4 p-lg-5 rounded-4">
+                                    <h3 class="mb-4 fw-bold"><i class="fas fa-envelope me-2"></i> Send a Message</h3>
+                                    
+                                    <form id="contactForm">
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                                    <label for="name">Your Name</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-floating">
+                                                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                                                    <label for="email">Your Email</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                                                    <label for="subject">Subject</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-floating">
+                                                    <textarea class="form-control" id="message" placeholder="Your Message" style="height: 150px" required></textarea>
+                                                    <label for="message">Your Message</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="consent" required>
+                                                    <label class="form-check-label" for="consent">
+                                                        I consent to having my data stored and processed according to your privacy policy
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <button type="submit" class="btn btn-primary btn-lg px-4 py-2">
+                                                    <i class="fas fa-paper-plane me-2"></i> Send Message
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Map Section -->
+                        <div class="row mt-5">
+                            <div class="col-12">
+                                <div class="map-card p-4 rounded-4">
+                                    <h3 class="mb-4 fw-bold"><i class="fas fa-map-marked-alt me-2"></i> Find My Office</h3>
+                                    <div class="ratio ratio-16x9">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2947.382556041687!2d-71.13047692423915!3d42.38051097118575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3773914b5820b%3A0x4e79d8f4a7a4a4a4!2sHarvard-Smithsonian%20Center%20for%20Astrophysics!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" 
+                                                allowfullscreen="" 
+                                                loading="lazy"
+                                                class="rounded-3"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Content Sections -->
-            <div id="content-about" class="content-section active col-10">
-                <h2>About Me</h2>
-                <p>I am a PhD student in astrophysics with a strong background in observational astronomy and high-energy astrophysics...</p>
-                <p><a href="path/to/your_cv.pdf" target="_blank">Download CV</a></p>
-            </div>
-
-            <div id="content-research" class="content-section">
-                <h2>Research</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-
-            <div id="content-publications" class="content-section">
-                <h2>Publications</h2>
-                <p>Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
-            </div>
-
-            <div id="content-talks" class="content-section">
-                <h2>Talks</h2>
-                <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-            </div>
-
-            <div id="content-workshops" class="content-section">
-                <h2>Workshops</h2>
-                <p>Phasellus viverra nulla ut metus varius laoreet.</p>
-            </div>
-
-            <div id="content-skills" class="content-section">
-                <h2>Skills</h2>
-                <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus.</p>
-            </div>
-
-            <div id="content-contact" class="content-section">
-                <h2>Contact</h2>
-                <p>Maecenas nec odio et ante tincidunt tempus.</p>
-            </div>
         </section>
-    </div>
 
     <!-- AOS JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
@@ -171,7 +794,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!--Custom JavaScript -->
-    <script src="script.js"></script>
-    <script src="star.js"></script> <!-- Shooting Star Animation Script -->
+    <script src="javaScript/script.js"></script>
+    <script src="javaScript/star.js"></script> <!-- Shooting Star Animation Script -->
 </body>
 </html>

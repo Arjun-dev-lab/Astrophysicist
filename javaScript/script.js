@@ -98,7 +98,30 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+window.addEventListener('load', function () {
+        // Disable scroll restoration
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
 
+        // Scroll to top on load
+        window.scrollTo(0, 0);
 
+        // Fade out preloader
+        document.body.classList.add('loaded');
+    });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const contactLink = document.querySelector('.icon-button');
 
+    contactLink.addEventListener('click', function (e) {
+        e.preventDefault(); // Stop default navigation
+
+        document.body.classList.add('fade-out'); // Start fade-out
+
+        // Delay navigation to allow transition to finish
+        setTimeout(function () {
+            window.location.href = contactLink.href;
+        }, 500); // Match the CSS transition time
+    });
+});
